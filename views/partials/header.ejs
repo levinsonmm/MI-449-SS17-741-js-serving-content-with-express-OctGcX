@@ -1,3 +1,11 @@
 <header>
-  <h1>Emo Forever 💔</h1>
+  <h1>💔 Emo Forever 💔</h1>
+  <h3>Female Fronted Edition</h3>
+  <nav>
+    <% Object.keys(objs).forEach(function (id) { %>
+      <li>
+        <a href=<%= objs[id].link %>><%= objs[id].title %></a>
+      </li>
+    <% }) %>
+  </nav>
 </header>

@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+header {
+  background-color: #c78dd0;
+}
+
+img {
+  width: 500px;
+  height: inherit;
+}
+
+li {
+  display: inline;
+}

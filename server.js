@@ -13,25 +13,31 @@ createObject('Home', {
   alt: ''
 })
 
-createObject('Band1', {
-  title: 'Band1',
-  link: '/band1',
+createObject('Diet Cig', {
+  title: 'Diet Cig',
+  link: '/dietcig',
   image: 'https://f4.bcbits.com/img/0009206218_10.jpg',
-  alt: ''
+  alt: 'diet cig album cover',
+  bandcamp: 'http://dietcig.bandcamp.com/album/swear-im-good-at-this',
+  bandcampE: 'https://bandcamp.com/EmbeddedPlayer/album=3931624143/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/'
 })
 
-createObject('Band2', {
-  title: 'Band2',
-  link: '/band2',
-  image: 'https://upload.wikimedia.org/wikipedia/en/6/6e/Thedevilandgodareraginginsideme.jpg',
-  alt: ''
+createObject('Thin Lips', {
+  title: 'Thin Lips',
+  link: '/thinlips',
+  image: 'https://f4.bcbits.com/img/a0109924820_10.jpg',
+  alt: 'thin lips album cover',
+  bandcamp: 'http://xxthinlipsxx.bandcamp.com/album/riff-hard-2',
+  bandcampE: 'https://bandcamp.com/EmbeddedPlayer/album=4274183086/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/'
 })
 
-createObject('Band3', {
-  title: 'Band3',
-  link: '/band3',
-  image: 'https://upload.wikimedia.org/wikipedia/en/b/b7/Joyce_Manor_Never_Hungover_Again.png',
-  alt: ''
+createObject('Pity Sex', {
+  title: 'Pity Sex',
+  link: '/pitysex',
+  image: 'https://f4.bcbits.com/img/a1901683862_10.jpg',
+  alt: 'pity sex album cover',
+  bandcamp: 'http://pitysex.bandcamp.com/album/white-hot-moon',
+  bandcampE: 'https://bandcamp.com/EmbeddedPlayer/album=211366956/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/'
 })
 
 function createObject (id, obj) {
@@ -44,22 +50,22 @@ app.get('/', function (request, response) {
     obj: objs['Home']
   })
 })
-app.get('/band1', function (request, response) {
+app.get('/dietcig', function (request, response) {
   response.render('pages/band', {
     objs: objs,
-    obj: objs['Band1']
+    obj: objs['Diet Cig']
   })
 })
-app.get('/band2', function (request, response) {
+app.get('/thinlips', function (request, response) {
   response.render('pages/band', {
     objs: objs,
-    obj: objs['Band2']
+    obj: objs['Thin Lips']
   })
 })
-app.get('/band3', function (request, response) {
+app.get('/pitysex', function (request, response) {
   response.render('pages/band', {
     objs: objs,
-    obj: objs['Band3']
+    obj: objs['Pity Sex']
   })
 })
 
