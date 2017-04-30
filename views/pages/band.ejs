@@ -1,6 +1,12 @@
 <% include ../partials/head %>
-<% include ../partials/header %>
 <body>
-<% include ../partials/image %>
-<iframe style="border: 0; width: 400px; height: 472px;" src=<%= obj.bandcampE %> seamless><a href=<%= obj.bandcamp %>></a></iframe>
+  <div class="content">
+    <% include ../partials/header %>
+    <div class="center">
+      <h2><%= obj.title %></h2>
+      <% include ../partials/image %>
+      <iframe style="border: 0; width: 400px; height: 472px;" src=<%= obj.bandcampE %> seamless><a href=<%= obj.bandcamp %>></a></iframe>
+      <p><%= obj.writeUp %></p>
+    </div>
+  </div>
 </body>

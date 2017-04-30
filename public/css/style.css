@@ -1,16 +1,64 @@
 body {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  background-image: url("/images/stardust.png");
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.center {
+  margin-top: 5%;
 }
 
 header {
-  background-color: #c78dd0;
+  background-image: url("/images/hip-square.png");
+  padding: 1em;
 }
 
 img {
-  width: 500px;
-  height: inherit;
+  height: 472px;
+  width: inherit;
 }
 
 li {
   display: inline;
+  padding: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  font-style: italic;
+}
+
+h3 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+p {
+  padding-left: 100px;
+  padding-right: 100px;
 }
